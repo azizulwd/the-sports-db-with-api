@@ -14,3 +14,32 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+h1{
+    text-align: center;
+    color: green;
+    margin-top: 50px;
+}
+#search_control {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#search_control input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid green;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+#search_control button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid green;
+    background: green;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
