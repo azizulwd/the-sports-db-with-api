@@ -3,6 +3,7 @@
 const loadPlayer = () => {
     const searchField = document.getElementById("searchField");
     const searchText = searchField.value;
+    searchField.value = "";
     const url = `https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${searchText}`;
     
     fetch(url)
@@ -15,7 +16,6 @@ const displayPlayer = player => {
     const players = player.teams;
 
     players.forEach(team => {
-        console.log(team);
         const createDiv = document.createElement("div");
         createDiv.classList.add("player");
         createDiv.innerHTML = `
